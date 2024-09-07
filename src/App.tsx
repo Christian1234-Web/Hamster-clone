@@ -122,13 +122,13 @@ const App: React.FC = () => {
     return `+${profit}`;
   };
 
-  useEffect(() => {
-    const pointsPerSecond = Math.floor(profitPerHour / 3600);
-    const interval = setInterval(() => {
-      setPoints(prevPoints => prevPoints + pointsPerSecond);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [profitPerHour]);
+  // useEffect(() => {
+  //   const pointsPerSecond = Math.floor(profitPerHour / 3600);
+  //   const interval = setInterval(() => {
+  //     setPoints(prevPoints => prevPoints + pointsPerSecond);
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, [profitPerHour]);
 
   return (
     <div className="bg-black flex justify-center">
